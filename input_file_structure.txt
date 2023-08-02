@@ -1,0 +1,14 @@
+The following file structure is adopted by our code.
+####################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
+[Number of edges |V|] [Number of edges |E|]
+(1^{st} edge id) [first node id] [second node id] [road length] [Number of data points N_1 in this edge] [distance from the [1^{st} data point] to [first node id]] [distance from the [2^{nd} data point] to [first node id]] ... [distance from the [{N_1}^{th} data point] to [first node id]]
+(2^{nd} edge id) [first node id] [second node id] [road length] [Number of data points N_2 in this edge] [distance from the [1^{st} data point] to [first node id]] [distance from the [2^{nd} data point] to [first node id]] ... [distance from the [{N_2}^{th} data point] to [first node id]]
+:
+:
+:
+(|E|^{th} edge id) [first node id] [second node id] [road length] [Number of data points N_{|E|} in this edge] [distance from the [1^{st} data point] to [first node id]] [distance from the [2^{nd} data point] to [first node id]] ... [distance from the [{N_{|E|}}^{th} data point] to [first node id]]
+####################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
+
+We need to store the number of nodes |V| and the number of edges |E| (cf. line 3), and do not need to store the edge id inside the parentheses "()", since our code regards the "1^{st} edge id" as 0, "2^{nd} edge id" as 1...
+For each edge (e.g., line 4), we need to store two node ids, namely "first node id" and "second node id" (which correspond to two end points of this edge), the road length, and the number of data points in this edge. Then, we need to store the distance value of each data point to the first end point.
+In total, there are |E| edges.
