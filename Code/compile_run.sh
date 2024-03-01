@@ -15,7 +15,7 @@ exit #Remove it if you want to run our code.
 #our_model.bandwidth = atof(argv[6]); //The bandwidth parameter (in meters)
 
 
-#An example for calling our code
+#This is an example for calling our code.
 network_fileName="./Datasets/Detroit"
 out_NKDV_fileName="./Results/Detroit_NKDV_output"
 method=6
