@@ -14,6 +14,8 @@ exit #Remove it if you want to run our code.
 #our_model.k_type = atoi(argv[5]); //k_type = 1: Triangular kernel, k_type = 2: Epanechnikov kernel, and k_type = 3: Quartic kernel
 #our_model.bandwidth = atof(argv[6]); //The bandwidth parameter (in meters)
 
+
+#An example for calling our code
 network_fileName="./Datasets/Detroit"
 out_NKDV_fileName="./Results/Detroit_NKDV_output"
 method=6
